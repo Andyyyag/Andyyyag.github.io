@@ -3,4 +3,4 @@ Aguilar Gonzalez Andrea Camila
 
 pagina: https://www.twitch.tv
 
-[Twitch](Twitch/twitch.JPG)
+![Twitch](Twitch/twitch.JPG)
