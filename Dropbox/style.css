@@ -26,12 +26,15 @@
 .le{
     width: 33%;
     z-index: 0;
+    height: 900px;
     background-color: #2b2929;
 }
 
 .ri{
     width: 67%;
     z-index: 0;
+    height: 900px;
+    overflow: hidden;
     background-color: #1e1919;
 }
 
@@ -40,7 +43,7 @@
     margin-right: 60px;
     margin-top: 40px;
     font-family: "Sharp Grotesk 23", "Sharp Grotesk 23 KR", "Sharp Grotesk 23 Thai", "Helvetica (Sharp Grotesk 23 Fallback)", "Arial (Sharp Grotesk 23 Fallback)", sans-serif;
-    font-size: 65px;
+    font-size: 46px;
     color: white;
 }
 
@@ -107,8 +110,8 @@ p{
 }
 
 .bax{
-    width: 27%;
-    height: 1100px;
+    width: 30%;
+    height: 1300px;
     border-radius: 15px;
     background-color: whitesmoke;
 }
