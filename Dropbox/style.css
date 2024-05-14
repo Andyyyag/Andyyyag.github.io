@@ -9,6 +9,10 @@
     font-size: 26px;
 }
 
+.btnn:hover{
+    filter: brightness(110%);
+}
+
 
 
 .inici{
@@ -58,6 +62,14 @@
     position: relative;
     margin-left: 70px;
     height: 100px;
+}
+
+#prue:hover{
+    filter: brightness(110%);
+}
+
+.prueb:hover{
+    filter: brightness(110%);
 }
 
 .prueb{
