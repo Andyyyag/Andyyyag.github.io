@@ -1,21 +1,47 @@
-<DOCTYPE html>
-    <html lang="en">
-
+<!DOCTYPE html>
+<html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content=""width=device-width, initial-scale="1.0">
-        <title>proyecto final parcial #3</title>
-        <link rel="stylesheet" href="ccs/boostrap.css">
-        <script src="js/jquery-3.7.1.js"><script>
-
-        <head> 
-            <body>
-                <div class="container">
-                    <h1> proyecto final parcial 3</h1>
-                     <div class="row mt-2">
-                    <div class="col">
-                        <h3 class="card">SELECT * FROM alumno</h3>
-                        <p>obtener el listado de todos los alumnos de la facultad</p>
-                        <img src="" alt="">
-            </body>
-            </head>
+        <title>Proyecto final parcial #3</title>
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <script src="js/jquery-3.7.1.js"></script>
+       
+        
+    </head>
+    <body>
+        <div class="container">
+            <h1> Proyecto final parcial 3</h1>
+            <div class="row mt-2">
+                <div class="col">
+                    <h3 class="card" style="color: rgb(151, 176, 245); border: 1px solid rgb(255, 240, 227); border-radius: 5px; background-color: rgb(255, 240, 227);">SELECT * FROM alumno:</h3>
+                    <p>obtener el listado de todos los alumnos de la Facultad.</p>
+                    <img src="consulta.png" alt="" class="img-fluid" width="500px"> 
+                </div>
+            </div>
+        </div>
+        <div class="row mt-2">
+            <div class="col">
+                <h3 class="card" style="color: rgb(32, 121, 255); border: 1px solid rgb(255, 240, 227); border-radius: 5px; background-color: rgb(255, 240, 227);">SELECT curso.nombreDescriptivo, asignatura.nombre FROM curso INNER JOIN asignatura ON curso.idCurso = asignatura.curso</h3>
+                <p>obtener el listado de todos los nombres de los cursos y asignaturas que tiene</p>
+                <img src="consulta2.png" alt="" class="img-fluid" width="500px"> 
+            </div>
+        </div>
+        <div class="row mt-2">
+            <div class="col">
+                <h3 class="card" style="color: rgb(32, 121, 255); border: 1px solid rgb(255, 240, 227); border-radius: 5px; background-color: rgb(255, 240, 227);">SELECT nombre, apellido1, apellido2FROMalumno WHERE beca LIKE ´SI´</h3>
+                <p>obtener el listado nombre y apellido de alumnos que tengan beca</p>
+                <img src="consulta3.png" alt="" class="img-fluid" width="500px"> 
+            </div>
+        </div>
+        <div class="row mt-2">
+            <div class="col">
+                <h3 class="card" style="color: rgb(32, 121, 255); border: 1px solid rgb(255, 240, 227); border-radius: 5px; background-color: rgb(255, 240, 227);">SELECT profesor.nombre,profesor.apellido1,tlfcontactoprof.telefeno from profesor.idprofesor = tlfcontactoprof.idprofesor</h3>
+                <p>obtener listado de profesores nombre, apellido y su numero de contacto</p>
+                <img src="consulta4.png" alt="" class="img-fluid" width="500px"> 
+            </div>
+        </div>
+  
+        <script src="js/bootstrap.js"></script>
+    </body>
+</html>
