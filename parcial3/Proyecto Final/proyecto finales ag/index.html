@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content=""width=device-width, initial-scale="1.0">
+        <title>Proyecto final parcial #3</title>
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <script src="js/jquery-3.7.1.js"></script>
+       
+        
+    </head>
+    <body>
+        <div class="container">
+            <h1> Proyecto final parcial 3</h1>
+            <div class="row mt-2">
+                <div class="col">
+                    <h3 class="card" style="color: rgb(216, 18, 18); border: 1px solid rgb(255, 227, 254); border-radius: 5px; background-color: rgb(255, 240, 227);">SELECT * FROM alumno:</h3>
+                    <p>obtener el listado de todos los alumnos de la Facultad.</p>
+                    <img src="consulta1.png" alt="" class="img-fluid" width="500px"> 
+                </div>
+            </div>
+        </div>
+        <div class="row mt-2">
+            <div class="col">
+                <h3 class="card" style="color: rgb(241, 59, 59); border: 1px solid  rgb(227, 255, 231); border-radius: 5px; background-color: rgb(255, 240, 227);">SELECT curso.nombreDescriptivo, asignatura.nombre FROM curso INNER JOIN asignatura ON curso.idCurso = asignatura.curso</h3>
+                <p>obtener el listado de todos los nombres de los cursos y asignaturas que tiene</p>
+                <img src="consulta2.png" alt="" class="img-fluid" width="500px"> 
+            </div>
+        </div>
+        <div class="container">
+            <div class="row mt-2">
+                <div class="col">
+                    <h3 class="card" style="color: rgb(175, 35, 35); border: 1px solid rgb(255, 240, 227); border-radius: 5px; background-color: rgb(255, 240, 227);">SELECT nombre, apellido1, apellido2 FROM alumno WHERE beca LIKE "si"</h3>
+                    <p>OBTENER LISTADO(NOMBRE Y APELLIDO) DE ALUMNOS QUE TENGAN BECA</p>
+                    <img src="consulta3.png" alt="" class="img-fluid" width="500px"> 
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row mt-2">
+                <div class="col">
+                    <h3 class="card" style="color: rgb(228, 54, 54); border: 1px solid rgb(255, 240, 227); border-radius: 5px; background-color: rgb(255, 240, 227);">SELECT profesor.nombre,profesor.apellido1,tlfcontactoprof.telefono from profesor INNER JOIN tlfcontactoprof ON profesor.idProfesor = tlfcontactoprof.idProfesor</h3>
+                    <p>obtener listado de profesores nombre, apellido y su numero de contacto</p>
+                    <img src="consulta4.png" alt="" class="img-fluid" width="500px"> 
+                </div>
+            </div>
+        </div>
+  
+        <div class="container">
+            <div class="row mt-2">
+                <div class="col">
+                    <h3 class="card" style="color: rgb(179, 47, 47); border: 1px solid rgb(255, 240, 227); border-radius: 5px; background-color: rgb(255, 240, 227);">SELECT * FROM alumno:</h3>
+                    <p>OBTENER EL LISTADO DE ALUMNOS(TODOS LO9S CAMPOS) QUE ESTAN INSCRITOS A LA ASIGNATURA DE PROGRAMACION</p>
+                    <img src="consulta5.png" alt="" class="img-fluid" width="500px"> 
+                </div>
+            </div>
+        </div>
+  
+        <div class="container">
+            <div class="row mt-2">
+                <div class="col">
+                    <h3 class="card" style="color: rgb(202, 62, 62); border: 1px solid rgb(255, 240, 227); border-radius: 5px; background-color: rgb(255, 240, 227);">SELECT * FROM alumno:</h3>
+                    <p>OBTENER LISTADO DE PROFESORES Y ASIGNATURAS QUE IMPARTEN</p>
+                    <img src="consulta6.png" alt="" class="img-fluid" width="500px"> 
+                </div>
+            </div>
+        </div>
+  
+        <div class="container">
+            <div class="row mt-2">
+                <div class="col">
+                    <h3 class="card" style="color: rgb(170, 50, 50); border: 1px solid rgb(255, 240, 227); border-radius: 5px; background-color: rgb(255, 240, 227);">SELECT * FROM alumno:</h3>
+                    <p>MOSTRAR LA ASIGNATURA QUE TIENE MAS ALUMNOS INSCRITOS Y SU TOTAL</p>
+                    <img src="consulta7.png" alt="" class="img-fluid" width="500px"> 
+                </div>
+            </div>
+        </div>
+  
+        <div class="container">
+            <div class="row mt-2">
+                <div class="col">
+                    <h3 class="card" style="color: rgb(173, 35, 35); border: 1px solid rgb(255, 240, 227); border-radius: 5px; background-color: rgb(255, 240, 227);">SELECT * FROM alumno:</h3>
+                    <p>OBTENER EL LISTADO DE ALUMNOS QUE LES DA CLASES EL PROFESOR CON ID PR048(JOSE MANUEL), SIN IMPORTAR EN QUE ASIGNATURA ESTE INSCRITO </p>
+                    <img src="consulta8.png" alt="" class="img-fluid" width="500px"> 
+                </div>
+            </div>
+        </div>
+  
+        <div class="container">
+            <div class="row mt-2">
+                <div class="col">
+                    <h3 class="card" style="color: rgb(182, 52, 52); border: 1px solid rgb(255, 240, 227); border-radius: 5px; background-color: rgb(255, 240, 227);">SELECT * FROM alumno:</h3>
+                    <p>OBTENER LISTADO DE CURSOS, CON ASIGNATURA, Y EL MAESTRO QUE LOS IMPARTE</p>
+                    <img src="consulta9.png" alt="" class="img-fluid" width="500px"> 
+                </div>
+            </div>
+        </div> <div class="container">
+            <div class="row mt-2">
+                <div class="col">
+                    <h3 class="card" style="color: rgb(173, 50, 50); border: 1px solid rgb(255, 240, 227); border-radius: 5px; background-color: rgb(255, 240, 227);">SELECT * FROM alumno:</h3>
+                    <p>OBTENER LISTADO DE ALUMNOS CON ASIGNATURAS QUE CURSA, PROFESOR QUE LA IMPARTA Y CURSO AL QUE PERTENECE </p>
+                    <img src="consulta10.png" alt="" class="img-fluid" width="500px"> 
+                </div>
+            <h4>PAGINA HECHA POR:Aguilar Gonzalez Andrea Camila</h4>
+            </div>
+        </div>
+        
+  
+  
+        <script src="js/bootstrap.js"></script>
+    </body>
+</html>
