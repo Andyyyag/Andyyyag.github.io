@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen en línea</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+<body>
+    <div class="container">
+        <form action="practica4.php" method="POST">
+            <div class="row">
+                <h1>Exámen de programación</h1><hr>
+                    <div class="card mb-4">
+                        <div class="card-header">
+                        1. ¿Lenguaje de programación que se utiliza para WEB?
+                        </div>
+                        <div class="card-body">
+                            <p><input type="radio" name="pregunta1" value="HTML" required> HTML </p>
+                            <p><input type="radio" name="pregunta1" value="SQL" required> SQL </p>
+                            <p><input type="radio" name="pregunta1" value="PHP" required> PHP </p>
+                        </div>
+                    </div>
+                    <div class="card p-4 mb-4">
+                        <p>
+                            2. <input type="text" name="pregunta2" required> es una plataforma informática de lenguaje de programación creada por Sun Microsystems en 1995.
+                        </p>
+                    </div>
+                    <div class="card mb-4">
+                        <div class="card-header">
+                        1. ¿Son lenguajes utilizados para la gestión de base de datos? (Selecciona 2)
+                        </div>
+                        <div class="card-body">
+                            <p><input type="checkbox" name="pregunta3[]" value="mongo" > Mongo </p>
+                            <p><input type="checkbox" name="pregunta3[]" value="sql" > SQL </p>
+                            <p><input type="checkbox" name="pregunta3[]" value="html" > HTML </p>
+                        </div>
+                    </div>
+            </div>
+            <br><input type="submit" class="btn btn-primary" value="Terminar examen">
+        </form>
+    </div>
+</body>
+</html>
